@@ -1,0 +1,7 @@
+<ion-grid>
+  <ion-row *ngFor="let row of _keyboardLines">
+    <ion-col *ngFor="let key of row">
+      <app-key [key]="key" (keyClick)="onKeyClick($event)"></app-key>
+    </ion-col>
+  </ion-row>
+</ion-grid>
